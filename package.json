@@ -5,16 +5,21 @@
   "private": true,
   "scripts": {
     "track": "tsx src/track-event.ts",
+    "track:batch": "tsx src/track-batch.ts",
     "identify": "tsx src/identify-contact.ts",
-    "send": "tsx src/send-email.ts"
+    "identify:batch": "tsx src/identify-batch.ts",
+    "send": "tsx src/send-email.ts",
+    "contacts:list": "tsx src/contacts-list.ts",
+    "contacts:get": "tsx src/contacts-get.ts",
+    "contacts:update": "tsx src/contacts-update.ts",
+    "contacts:delete": "tsx src/contacts-delete.ts",
+    "templates:list": "tsx src/templates-list.ts",
+    "templates:get": "tsx src/templates-get.ts",
+    "templates:create": "tsx src/templates-create.ts",
+    "templates:update": "tsx src/templates-update.ts",
+    "templates:delete": "tsx src/templates-delete.ts",
+    "templates:preview": "tsx src/templates-preview.ts"
   },
-  "dependencies": {
-    "@pyrx/synapse": "latest",
-    "dotenv": "^16.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.0",
-    "tsx": "^4.0.0",
-    "@types/node": "^20.0.0"
-  }
+  "dependencies": { "@pyrx/synapse": "latest", "dotenv": "^16.0.0" },
+  "devDependencies": { "typescript": "^5.0.0", "tsx": "^4.0.0", "@types/node": "^20.0.0" }
 }
