@@ -6,6 +6,8 @@ const template = await synapse.templates.create({
   slug: 'order-confirmation',
   name: 'Order Confirmation',
   subject: 'Your order {the order ID} is confirmed',
-  body: 'Hi {the user\'s First Name}, your order has been confirmed.',
+  body_html: '<h1>Hi {the user\'s First Name}</h1><p>Your order has been confirmed.</p>',
+  sender_name: 'Synapse',
+  from_email: 'noreply@example.com',
 });
 console.log('Created:', JSON.stringify(template, null, 2));
