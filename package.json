@@ -1,0 +1,20 @@
+{
+  "name": "@pyrx-examples/node",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "track": "tsx src/track-event.ts",
+    "identify": "tsx src/identify-contact.ts",
+    "send": "tsx src/send-email.ts"
+  },
+  "dependencies": {
+    "@pyrx/synapse": "latest",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
